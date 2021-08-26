@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="158.5281385281385" y="283.201171875">MyUmlInteraction</node>
+    <node x="230.0" y="13.201171875">MyUmlInterface</node>
+    <node x="20.0" y="13.201171875">MyUmlOperation</node>
+    <node x="179.0952380952381" y="123.201171875">MyUmlClass</node>
+    <node x="250.52813852813853" y="363.201171875">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="MyUmlInterface" target="MyUmlInterface">
+      <point x="-45.71428571428571" y="15.0" />
+      <point x="264.2857142857143" y="73.201171875" />
+      <point x="200.0" y="73.201171875" />
+      <point x="200.0" y="20.701171875" />
+      <point x="-80.0" y="-7.5" />
+    </edge>
+    <edge source="MyUmlClass" target="MyUmlInterface">
+      <point x="16.0" y="-15.0" />
+      <point x="259.09523809523813" y="93.201171875" />
+      <point x="287.1428571428571" y="93.201171875" />
+      <point x="-22.85714285714286" y="15.0" />
+    </edge>
+    <edge source="MyUmlInteraction" target="MyUmlInterface">
+      <point x="78.22222222222226" y="-15.0" />
+      <point x="324.75036075036076" y="263.201171875" />
+      <point x="360.7882395382395" y="263.201171875" />
+      <point x="360.7882395382395" y="103.201171875" />
+      <point x="378.57142857142856" y="103.201171875" />
+      <point x="68.57142857142858" y="15.0" />
+    </edge>
+    <edge source="Main" target="MyUmlInteraction">
+      <point x="0.0" y="-15.0" />
+      <point x="44.00000000000003" y="15.0" />
+    </edge>
+    <edge source="MyUmlClass" target="MyUmlClass">
+      <point x="-10.666666666666671" y="15.0" />
+      <point x="232.42857142857144" y="193.201171875" />
+      <point x="139.0952380952381" y="193.201171875" />
+      <point x="139.0952380952381" y="128.201171875" />
+      <point x="-64.0" y="-10.0" />
+    </edge>
+    <edge source="MyUmlClass" target="MyUmlOperation">
+      <point x="-16.0" y="-15.0" />
+      <point x="227.0952380952381" y="93.201171875" />
+      <point x="166.66666666666669" y="93.201171875" />
+      <point x="66.66666666666669" y="15.0" />
+    </edge>
+    <edge source="MyUmlInteraction" target="MyUmlOperation">
+      <point x="-39.111111111111086" y="-15.0" />
+      <point x="207.4170274170274" y="243.201171875" />
+      <point x="91.62734487734491" y="243.201171875" />
+      <point x="91.62734487734491" y="103.201171875" />
+      <point x="113.33333333333337" y="103.201171875" />
+      <point x="13.333333333333371" y="15.0" />
+    </edge>
+    <edge source="MyUmlInteraction" target="MyUmlClass">
+      <point x="-19.555555555555515" y="-15.0" />
+      <point x="226.97258297258298" y="213.201171875" />
+      <point x="253.7619047619048" y="213.201171875" />
+      <point x="10.666666666666686" y="15.0" />
+    </edge>
+    <edge source="MyUmlInteraction" target="MyUmlInteraction">
+      <point x="-44.0" y="15.0" />
+      <point x="202.5281385281385" y="333.201171875" />
+      <point x="138.5281385281385" y="333.201171875" />
+      <point x="138.5281385281385" y="298.201171875" />
+      <point x="-88.0" y="-0.0" />
+    </edge>
+    <edge source="MyUmlOperation" target="MyUmlOperation">
+      <point x="-66.66666666666666" y="15.0" />
+      <point x="33.33333333333334" y="63.201171875" />
+      <point x="0.0" y="63.201171875" />
+      <point x="0.0" y="28.201171875" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="553.4999999999997" y="334.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="364.0" y="7.0">Count</node>
+    <node x="180.0" y="110.0">MyGroup</node>
+    <node x="525.0" y="110.0">MyRedEnvelopeMessage</node>
+    <node x="773.0" y="110.0">MyNoticeMessage</node>
+    <node x="179.25" y="0.0">MyPerson</node>
+    <node x="605.6590909090909" y="0.0">MyMessage</node>
+    <node x="20.0" y="0.0">Edge</node>
+    <node x="405.0" y="220.0">Main</node>
+    <node x="325.0" y="110.0">MyEmojiMessage</node>
+    <node x="20.0" y="110.0">MyNetwork</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="MyPerson" target="MyPerson">
+      <point x="-42.0" y="15.0" />
+      <point x="193.25" y="50.0" />
+      <point x="159.25" y="50.0" />
+      <point x="159.25" y="15.0" />
+      <point x="-56.0" y="-0.0" />
+    </edge>
+    <edge source="Main" target="MyNetwork">
+      <point x="-34.28571428571422" y="-15.0" />
+      <point x="410.7142857142858" y="200.0" />
+      <point x="110.0" y="200.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="MyMessage" target="MyMessage">
+      <point x="-52.5" y="15.0" />
+      <point x="613.1590909090909" y="50.0" />
+      <point x="585.6590909090909" y="50.0" />
+      <point x="585.6590909090909" y="15.0" />
+      <point x="-60.0" y="-0.0" />
+    </edge>
+    <edge source="Main" target="MyNoticeMessage">
+      <point x="22.85714285714289" y="-15.0" />
+      <point x="467.8571428571429" y="190.0" />
+      <point x="899.0" y="190.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="MyGroup" target="MyPerson">
+      <point x="0.0" y="-15.0" />
+      <point x="232.0" y="90.0" />
+      <point x="249.25" y="90.0" />
+      <point x="14.0" y="15.0" />
+    </edge>
+    <edge source="MyEmojiMessage" target="MyMessage">
+      <point x="40.0" y="-15.0" />
+      <point x="445.0" y="80.0" />
+      <point x="643.1590909090909" y="80.0" />
+      <point x="-22.5" y="15.0" />
+    </edge>
+    <edge source="MyNoticeMessage" target="MyNoticeMessage">
+      <point x="-42.0" y="15.0" />
+      <point x="815.0" y="160.0" />
+      <point x="753.0" y="160.0" />
+      <point x="753.0" y="125.0" />
+      <point x="-84.0" y="-0.0" />
+    </edge>
+    <edge source="Main" target="MyGroup">
+      <point x="-22.85714285714289" y="-15.0" />
+      <point x="422.1428571428571" y="190.0" />
+      <point x="258.0" y="190.0" />
+      <point x="26.0" y="15.0" />
+    </edge>
+    <edge source="MyRedEnvelopeMessage" target="MyMessage">
+      <point x="52.0" y="-15.0" />
+      <point x="681.0" y="90.0" />
+      <point x="673.1590909090909" y="90.0" />
+      <point x="7.5" y="15.0" />
+    </edge>
+    <edge source="Main" target="MyPerson">
+      <point x="-11.428571428571445" y="-15.0" />
+      <point x="433.57142857142856" y="180.0" />
+      <point x="294.5" y="180.0" />
+      <point x="294.5" y="90.0" />
+      <point x="277.25" y="90.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="Edge" target="Edge">
+      <point x="-30.0" y="15.0" />
+      <point x="30.0" y="50.0" />
+      <point x="0.0" y="50.0" />
+      <point x="0.0" y="15.0" />
+      <point x="-40.0" y="-0.0" />
+    </edge>
+    <edge source="MyNetwork" target="MyPerson">
+      <point x="45.0" y="-15.0" />
+      <point x="125.0" y="90.0" />
+      <point x="221.25" y="90.0" />
+      <point x="-14.0" y="15.0" />
+    </edge>
+    <edge source="MyRedEnvelopeMessage" target="MyRedEnvelopeMessage">
+      <point x="-52.0" y="15.0" />
+      <point x="577.0" y="160.0" />
+      <point x="505.0" y="160.0" />
+      <point x="505.0" y="125.0" />
+      <point x="-104.0" y="-0.0" />
+    </edge>
+    <edge source="MyGroup" target="MyGroup">
+      <point x="-26.0" y="15.0" />
+      <point x="206.0" y="160.0" />
+      <point x="160.0" y="160.0" />
+      <point x="160.0" y="125.0" />
+      <point x="-52.0" y="-0.0" />
+    </edge>
+    <edge source="Main" target="MyEmojiMessage">
+      <point x="0.0" y="-15.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="Count" target="Count">
+      <point x="0.0" y="15.0" />
+      <point x="408.0" y="57.0" />
+      <point x="344.0" y="57.0" />
+      <point x="344.0" y="22.0" />
+      <point x="-44.0" y="-0.0" />
+    </edge>
+    <edge source="MyEmojiMessage" target="MyEmojiMessage">
+      <point x="-40.0" y="15.0" />
+      <point x="365.0" y="160.0" />
+      <point x="305.0" y="160.0" />
+      <point x="305.0" y="125.0" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="MyNetwork" target="Edge">
+      <point x="15.0" y="-15.0" />
+      <point x="95.0" y="90.0" />
+      <point x="90.0" y="90.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="MyNetwork" target="MyNetwork">
+      <point x="-30.0" y="15.0" />
+      <point x="50.0" y="160.0" />
+      <point x="0.0" y="160.0" />
+      <point x="0.0" y="125.0" />
+      <point x="-60.0" y="-0.0" />
+    </edge>
+    <edge source="Main" target="MyMessage">
+      <point x="34.285714285714334" y="-15.0" />
+      <point x="479.28571428571433" y="200.0" />
+      <point x="951.5" y="200.0" />
+      <point x="951.5" y="70.0" />
+      <point x="718.1590909090909" y="70.0" />
+      <point x="52.49999999999997" y="15.0" />
+    </edge>
+    <edge source="MyNoticeMessage" target="MyMessage">
+      <point x="-42.0" y="-15.0" />
+      <point x="815.0" y="90.0" />
+      <point x="688.1590909090909" y="90.0" />
+      <point x="22.5" y="15.0" />
+    </edge>
+    <edge source="Main" target="MyRedEnvelopeMessage">
+      <point x="11.428571428571445" y="-15.0" />
+      <point x="456.42857142857144" y="180.0" />
+      <point x="681.0" y="180.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="726.5" y="334.5" />
+  <SelectedNodes>
+    <node>Count</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

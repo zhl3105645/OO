@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/class-diagram
+class DebugInput
+note bottom of DebugInput : debug时的定时输入线程
+class Elevator
+note top of Elevator : 电梯线程
+class Main
+class Strategy
+note bottom of Strategy : 获取电梯下次移动楼层的策略
+class WaitQueue
+note left of WaitQueue : 输入线程
+DebugInput ..|> Runnable
+Elevator --|> Thread
+WaitQueue --|> Thread
+Main --> WaitQueue
+WaitQueue o-right-"3-5个" Elevator
+
+WaitQueue --> DebugInput
+Elevator --> Strategy
+note "共享变量waitQueue" as N1
+WaitQueue .. N1
+Elevator .. N1
+
+
+class DebugInput {
+    -OutputStream outputStream
+    +void run()
+}
+class Elevator {
+    -{static} final int MAXFLOOR = 20
+    -{static} final int MINFLOOR = 1
+    -{static} final int MAXSIZE = 6
+    -{static} boolean end = false
+    -{static} String type
+    -final int id
+    -int floor
+    -int direct
+    -ArrayList<PersonRequest> passenger
+    -ArrayList<PersonRequest> waitQueue
+    +{static} void setEnd()
+    +{static} void setType()
+    +void run()
+    void move()
+    void outAndIn()
+    ArrayList<PersonRequest> getIn()
+    ArrayList<PersonRequest> getOff()
+    void up()
+    void down()
+    void open()
+    void close()
+}
+class Main {
+    +{static} void main()
+}
+class Strategy {
+    +PersonRequest moveTo()
+}
+class WaitQueue {
+    -ArrayList<PersonRequest> waitQueue
+    -ArrayList<Elevator> elevators
+    -static final boolean DEBUG = false
+    +void run()
+    +ArrayList<PersonRequest> getWaitQueue()
+
+}
+@enduml

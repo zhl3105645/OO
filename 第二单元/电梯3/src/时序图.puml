@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+Actor user
+user --> Main
+Main --> waitQueue : 创建等待队列
+Main --> WaitQueue : 启动输入线程
+WaitQueue --> Elevator : 启动电梯线程
+loop 输入线程获取请求
+    WaitQueue --> Request : 获得请求
+    alt 乘客请求
+        request --> waitQueue : 添加请求
+    else 电梯请求
+        request --> Elevator : 添加电梯
+    else 输入结束
+        request --> WaitQueue : 结束输入线程
+    end
+end
+loop 电梯运行
+    alt 输入结束且全部电梯乘客及等待队列为空
+        Elevator --> WaitQueue : 电梯线程结束
+    else 乘客为空且无该电梯可支持的请求
+        Elevator --> Elevator : 电梯wait
+    else 有乘客或有该电梯可支持的请求
+        Elevator --> Strategy : create
+        Strategy --> Elevator : 获取目标楼层
+        Elevator --> Elevator : 电梯运行
+    end
+end
+@enduml

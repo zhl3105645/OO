@@ -1,0 +1,81 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Ask
+class DebugInput
+note bottom of DebugInput : debug时的定时输入线程
+class Elevator
+note top of Elevator : 电梯线程
+class Main
+class Strategy
+note bottom of Strategy : 获取电梯下次移动楼层的策略
+class WaitQueue
+note left of WaitQueue : 输入线程
+DebugInput .left.|> Runnable
+Elevator -up-|> Thread
+WaitQueue -up-|> Thread
+WaitQueue o-- Ask
+Elevator o-- Ask
+Main --> WaitQueue
+WaitQueue o-right-"3-5个" Elevator
+Elevator --> WaitQueue
+WaitQueue -down-> DebugInput
+Elevator --> Strategy
+
+
+
+
+class DebugInput {
+    -OutputStream outputStream
+    +void run()
+}
+class Elevator {
+    -{static} final int MAXFLOOR = 20
+    -{static} final int MINFLOOR = 1
+    -final int maxSize
+    -final int id
+    -final String type
+    -int floor
+    -int direct
+    -{static} boolean end = false
+    -ArrayList<Ask> passenger
+    -ArrayList<Ask> waitQueue
+    -WaitQueue threadWait
+    +{static} void setEnd()
+    +{static} void setPattern()
+    +ArrayList<Ask> getPassenger()
+    +void run()
+    void move()
+    void outAndIn()
+    void floorOutAndIn()
+    ArrayList<Ask> getIn()
+    ArrayList<Ask> getOff()
+    void up()
+    void down()
+    void open()
+    void close()
+}
+class Main {
+    +{static} void main()
+}
+class Strategy {
+    +Ask moveTo()
+    +Ask hasAskWait()
+}
+class WaitQueue {
+    -ArrayList<Ask> waitQueue
+    -ArrayList<Elevator> elevators
+    -static final boolean DEBUG = false
+    +void run()
+    +ArrayList<Ask> getWaitQueue()
+    +boolean isEmptyPassenger()
+}
+class Ask {
+    -int fromFloor
+    -int toFloor
+    -int id
+    +getFromFloor()
+    +setFromFloor()
+    +getToFloor()
+    +getId()
+}
+@enduml

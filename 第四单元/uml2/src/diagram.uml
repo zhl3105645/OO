@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="85.3164682539682" y="13.201171875">collaboration.MyUmlLifeline</node>
+    <node x="371.58333333333326" y="293.201171875">classmodel.MyUmlClassModelInteraction</node>
+    <node x="51.58333333333326" y="293.201171875">collaboration.MyUmlCollaborationInteraction</node>
+    <node x="489.41170634920627" y="13.201171875">classmodel.MyUmlInterface</node>
+    <node x="20.0" y="133.201171875">collaboration.MyUmlInteraction</node>
+    <node x="441.79761904761904" y="133.201171875">classmodel.MyUmlClass</node>
+    <node x="683.8045634920634" y="133.201171875">statechart.MyUmlStateMachine</node>
+    <node x="778.6984126984125" y="13.201171875">statechart.MyUmlState</node>
+    <node x="444.9831349206348" y="403.201171875">MyUmlGeneralInteraction</node>
+    <node x="578.9831349206348" y="483.201171875">Main</node>
+    <node x="733.5545634920634" y="293.201171875">statechart.MyUmlStateChartInteraction</node>
+    <node x="277.3164682539682" y="13.201171875">classmodel.MyUmlOperation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="statechart.MyUmlStateChartInteraction" target="statechart.MyUmlStateChartInteraction">
+      <point x="-85.33333333333331" y="15.0" />
+      <point x="776.2212301587301" y="343.201171875" />
+      <point x="713.5545634920634" y="343.201171875" />
+      <point x="713.5545634920634" y="308.201171875" />
+      <point x="-128.0" y="-0.0" />
+    </edge>
+    <edge source="collaboration.MyUmlInteraction" target="collaboration.MyUmlLifeline">
+      <point x="-44.0" y="-15.0" />
+      <point x="64.0" y="113.201171875" />
+      <point x="123.3164682539682" y="113.201171875" />
+      <point x="-38.0" y="15.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClass" target="classmodel.MyUmlClass">
+      <point x="-32.0" y="15.0" />
+      <point x="473.79761904761904" y="193.201171875" />
+      <point x="411.79761904761904" y="193.201171875" />
+      <point x="411.79761904761904" y="148.201171875" />
+      <point x="-64.0" y="-0.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClassModelInteraction" target="classmodel.MyUmlInterface">
+      <point x="113.77777777777777" y="-15.0" />
+      <point x="613.3611111111111" y="273.201171875" />
+      <point x="632.5188492063492" y="273.201171875" />
+      <point x="632.5188492063492" y="113.201171875" />
+      <point x="637.9831349206349" y="113.201171875" />
+      <point x="68.57142857142858" y="15.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClassModelInteraction" target="classmodel.MyUmlClass">
+      <point x="-28.444444444444457" y="-15.0" />
+      <point x="471.1388888888888" y="223.201171875" />
+      <point x="516.4642857142858" y="223.201171875" />
+      <point x="10.666666666666686" y="15.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClassModelInteraction" target="classmodel.MyUmlClassModelInteraction">
+      <point x="-85.33333333333333" y="15.0" />
+      <point x="414.24999999999994" y="343.201171875" />
+      <point x="351.58333333333326" y="343.201171875" />
+      <point x="351.58333333333326" y="308.201171875" />
+      <point x="-128.0" y="-0.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClass" target="classmodel.MyUmlOperation">
+      <point x="-48.0" y="-15.0" />
+      <point x="457.79761904761904" y="113.201171875" />
+      <point x="397.3164682539682" y="113.201171875" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="statechart.MyUmlState" target="statechart.MyUmlState">
+      <point x="-36.571428571428555" y="15.0" />
+      <point x="806.1269841269841" y="73.201171875" />
+      <point x="748.6984126984125" y="73.201171875" />
+      <point x="748.6984126984125" y="20.701171875" />
+      <point x="-64.0" y="-7.5" />
+    </edge>
+    <edge source="collaboration.MyUmlLifeline" target="collaboration.MyUmlLifeline">
+      <point x="-63.333333333333314" y="15.0" />
+      <point x="97.98313492063488" y="63.201171875" />
+      <point x="65.3164682539682" y="63.201171875" />
+      <point x="65.3164682539682" y="28.201171875" />
+      <point x="-76.0" y="-0.0" />
+    </edge>
+    <edge source="statechart.MyUmlStateChartInteraction" target="statechart.MyUmlStateMachine">
+      <point x="-106.66666666666663" y="-15.0" />
+      <point x="754.8878968253968" y="273.201171875" />
+      <point x="752.8045634920634" y="273.201171875" />
+      <point x="-23.0" y="15.0" />
+    </edge>
+    <edge source="collaboration.MyUmlCollaborationInteraction" target="collaboration.MyUmlCollaborationInteraction">
+      <point x="-93.33333333333331" y="15.0" />
+      <point x="98.24999999999994" y="343.201171875" />
+      <point x="31.583333333333258" y="343.201171875" />
+      <point x="31.583333333333258" y="308.201171875" />
+      <point x="-140.0" y="-0.0" />
+    </edge>
+    <edge source="classmodel.MyUmlOperation" target="classmodel.MyUmlOperation">
+      <point x="-66.66666666666666" y="15.0" />
+      <point x="290.64980158730157" y="63.201171875" />
+      <point x="257.3164682539682" y="63.201171875" />
+      <point x="257.3164682539682" y="28.201171875" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="collaboration.MyUmlCollaborationInteraction" target="collaboration.MyUmlLifeline">
+      <point x="116.66666666666663" y="-15.0" />
+      <point x="308.2499999999999" y="263.201171875" />
+      <point x="256.2331349206348" y="263.201171875" />
+      <point x="256.2331349206348" y="93.201171875" />
+      <point x="224.64980158730145" y="93.201171875" />
+      <point x="63.33333333333326" y="15.0" />
+    </edge>
+    <edge source="Main" target="MyUmlGeneralInteraction">
+      <point x="0.0" y="-15.0" />
+      <point x="58.0" y="15.0" />
+    </edge>
+    <edge source="statechart.MyUmlStateMachine" target="statechart.MyUmlStateMachine">
+      <point x="-69.0" y="15.0" />
+      <point x="706.8045634920634" y="183.201171875" />
+      <point x="663.8045634920634" y="183.201171875" />
+      <point x="663.8045634920634" y="148.201171875" />
+      <point x="-92.0" y="-0.0" />
+    </edge>
+    <edge source="collaboration.MyUmlInteraction" target="collaboration.MyUmlInteraction">
+      <point x="-66.0" y="15.0" />
+      <point x="42.0" y="183.201171875" />
+      <point x="0.0" y="183.201171875" />
+      <point x="0.0" y="148.201171875" />
+      <point x="-88.0" y="-0.0" />
+    </edge>
+    <edge source="MyUmlGeneralInteraction" target="MyUmlGeneralInteraction">
+      <point x="-58.0" y="15.0" />
+      <point x="502.9831349206348" y="453.201171875" />
+      <point x="424.9831349206348" y="453.201171875" />
+      <point x="424.9831349206348" y="418.201171875" />
+      <point x="-116.0" y="-0.0" />
+    </edge>
+    <edge source="MyUmlGeneralInteraction" target="statechart.MyUmlStateChartInteraction">
+      <point x="58.0" y="-15.0" />
+      <point x="618.9831349206348" y="373.201171875" />
+      <point x="861.5545634920634" y="373.201171875" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="statechart.MyUmlStateChartInteraction" target="statechart.MyUmlState">
+      <point x="106.66666666666663" y="-15.0" />
+      <point x="968.22123015873" y="263.201171875" />
+      <point x="900.3045634920634" y="263.201171875" />
+      <point x="900.3045634920634" y="113.201171875" />
+      <point x="897.5555555555554" y="113.201171875" />
+      <point x="54.857142857142776" y="15.0" />
+    </edge>
+    <edge source="classmodel.MyUmlInterface" target="classmodel.MyUmlInterface">
+      <point x="-45.71428571428571" y="15.0" />
+      <point x="523.6974206349206" y="73.201171875" />
+      <point x="459.41170634920627" y="73.201171875" />
+      <point x="459.41170634920627" y="20.701171875" />
+      <point x="-80.0" y="-7.5" />
+    </edge>
+    <edge source="classmodel.MyUmlClassModelInteraction" target="classmodel.MyUmlOperation">
+      <point x="-113.77777777777783" y="-15.0" />
+      <point x="385.80555555555543" y="273.201171875" />
+      <point x="324.3611111111111" y="273.201171875" />
+      <point x="324.3611111111111" y="113.201171875" />
+      <point x="317.3164682539682" y="113.201171875" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="MyUmlGeneralInteraction" target="classmodel.MyUmlClassModelInteraction">
+      <point x="-19.33333333333337" y="-15.0" />
+      <point x="541.6498015873015" y="363.201171875" />
+      <point x="499.58333333333326" y="363.201171875" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="MyUmlGeneralInteraction" target="collaboration.MyUmlCollaborationInteraction">
+      <point x="-96.66666666666663" y="-15.0" />
+      <point x="464.3164682539682" y="383.201171875" />
+      <point x="191.58333333333326" y="383.201171875" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="statechart.MyUmlStateMachine" target="statechart.MyUmlState">
+      <point x="-46.0" y="-15.0" />
+      <point x="729.8045634920634" y="103.201171875" />
+      <point x="824.4126984126983" y="103.201171875" />
+      <point x="-18.285714285714334" y="15.0" />
+    </edge>
+    <edge source="collaboration.MyUmlCollaborationInteraction" target="collaboration.MyUmlInteraction">
+      <point x="-116.66666666666663" y="-15.0" />
+      <point x="74.91666666666663" y="273.201171875" />
+      <point x="86.0" y="273.201171875" />
+      <point x="-22.0" y="15.0" />
+    </edge>
+    <edge source="classmodel.MyUmlClass" target="classmodel.MyUmlInterface">
+      <point x="16.0" y="-15.0" />
+      <point x="521.797619047619" y="113.201171875" />
+      <point x="546.5545634920634" y="113.201171875" />
+      <point x="-22.85714285714286" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="434.0" y="143.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

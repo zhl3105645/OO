@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Main
+class Many
+class Process
+class Single
+Main -up->Process : 输入singleStr
+Process -right-> Many : 输出single并加入到ArrayList中
+Many o-right- Single : have many single >
+Many <-- Single
+note on link #red: 输入求导结果
+Many -down-> Main : 输出manyDaoStr
+note "从项的字符串中提取出Single"  as N1
+Process .. N1
+
+
+
+
+class Main{
+    +{static}void main()
+}
+class Many{
+-ArrayList<Single> singles
++void addSingle()
++void manyDao()
+}
+class Process{
++Single getSingle()
+}
+class Single{
+-BigInteger xi
+-BigInteger zhi
+-BigInteger xiDao
+-BigInteger zhiDao
++BigInteger getXi()
++BigInteger getZhi()
++BigInteger setXi()
++void singleDao()
++String getDaoString()
+}
+
+@enduml

@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Item
+class Main
+class Poly
+class Process
+class Regex
+class Simply
+Main --> Process : manageLine
+Process --> Poly : 解析出items并加入poly
+Regex <.right. Process : 依赖于Regex
+Poly o.left. Item : have many singles >
+Poly --> Poly : 求导
+Poly --> Simply : 将结果化简
+Simply --> Main : 将化简形式返回Main
+note "END" as N1
+Main .. N1
+
+
+
+
+
+
+class Item{
+    -BigInteger coe
+    -BigInteger index
+    -BigInteger indexSin
+    -BigInteger indexCos
+    +Item()
+    +BigInteger getCos()
+    +BigInteger getIndex()
+    +BigInteger getIndexSin()
+    +BigInteger getIndexCos()
+    +boolean zhiEqual()
+    +Item[] itemDer()
+    +Item multItem()
+    +String toString()
+}
+class Main{
+    +{static}main()
+}
+class Poly{
+    -ArrayList<Item> items
+    -ArrayList<Item> itemsDer
+    +void addItem()
+    +void addItemDer()
+    +void polyDer()
+}
+class Process{
+    +String manageLine()
+    +ArrayList<String> getItemsStr()
+    -ArrayList<String> getExpsStr()
+    -ArrayList<Item> getItems()
+    -Item getNoExp()
+    -ArrayList<Item> getExp()
+    -ArrayList<Item> multItems()
+}
+class Regex{
+    +String getSin()
+    +String getCos()
+    +String getPow()
+    +String getYin()
+}
+class Simply{
+    +ArrayList<String> simply()
+
+}
+@enduml

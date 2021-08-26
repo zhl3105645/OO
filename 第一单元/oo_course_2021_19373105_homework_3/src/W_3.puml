@@ -1,0 +1,114 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Item
+class Judge
+class Main
+class Poly
+class Pow
+class Process
+class Regex
+class Triangle
+Main --> Judge : 判断表达式合法性
+Regex <.. Judge : 依赖于Regex
+Judge "不合法"--> Main : 输出"WRONG FORMAT!"
+Judge "合法"-right-> Process : manageLine
+Regex <.. Process : 依赖于Regex
+Process --> Poly : 解析出item并加入到poly
+Poly --> Poly : 求导
+Poly o.. Item : have many items >
+Item o.. Pow
+Item o.. Triangle
+Item --> Item : 求导
+Pow --> Pow : 求导
+Triangle --> Triangle : 求导
+Poly --> Main : 输出结果
+note "END" as N1
+Main .. N1
+
+class Item {
+    -Pow pow
+    -ArrayList<Triangle> triangles
+    -ArrayList<String> expItem
+    +Item()
+    +Pow getPow()
+    +void setPow()
+    +ArrayList<Triangle> getTriangles()
+    +void setTriangles()
+    +ArrayList<String> getExpItem()
+    +void setExpItem()
+    +void addTriangle()
+    +String toString()
+    +ArrayList<Item> itemsDer()
+    +Object deepCLone()
+    +boolean simply()
+
+}
+
+class Judge {
+    +boolean isLegal()
+    -int isItem()
+    -int isYin()
+    -int isExp()
+    -int isDigit()
+    -int isTri()
+    -boolean isSingleYin()
+    -int isxPow()
+    -int isIndex()
+
+}
+
+class Main {
+    +{static}void main()
+}
+
+class Poly {
+    -ArrayList<Item> poly
+    -ArrayList<Item> polyDer
+    +Poly()
+    +void getPolyDer()
+    +String getPolyDerStr()
+
+}
+
+class Pow {
+    -BigInteger coe
+    -BigInteger index
+    +Pow()
+    +BigInteger getCoe()
+    +BigInteger getIndex()
+    +Pow derivation()
+    +String toString()
+}
+
+class Process {
+    +String manageLine()
+    +ArrayList<Item> getItems()
+    -ArrayList<String> getItemsStr()
+    -ArrayList<Triangle> getTri()
+    -Pow getPow()
+
+}
+
+class Regex {
+    +String getPow()
+    +String getYin()
+}
+
+class Triangle {
+    -boolean isSin
+    -BigInteger coe
+    -BigInteger index
+    -String factor
+    +Triangle()
+    +boolean isSin()
+    +BigInteger getCoe()
+    +void setCoe()
+    +BigInteger getIndex()
+    +void setIndex()
+    +String getFactor()
+    +Triangle[] derivation()
+    +String toString()
+    +boolean equals()
+    +boolean isConstant()
+}
+@enduml

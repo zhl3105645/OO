@@ -1,0 +1,28 @@
+{
+  "1": "processingQueue.notifyAll();",
+  "2": "request",
+  "3": "for (ProcessingQueue processQueue : processingQueues) {
+                                            if (processQueue.getId() == 0) {
+                                                processQueue.addRequest(request);
+                                                break;
+                                            }
+                                        }",
+  "4": "request",
+  "5": "for (ProcessingQueue processQueue : processingQueues) {
+                                            if (processQueue.getId() == 1) {
+                                                processQueue.addRequest(request);
+                                                break;
+                                            }
+                                        }",
+  "6": "request",
+  "7": "for (ProcessingQueue processQueue : processingQueues) {
+                                            if (processQueue.getId() == 2) {
+                                                processQueue.addRequest(request);
+                                                break;
+                                            }
+                                        }",
+  "8": "return \"<destination:\" + destination + \" From-\" + leaveTime + \"-TO-\" + backTime + \">\";",
+  "9": "waitQueue",
+  "10": "processingQueue",
+  "11": ["dealBeijingRequest", "dealDomesticRequest", "dealForeign"]
+}
